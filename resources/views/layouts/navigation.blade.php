@@ -160,6 +160,11 @@
                     {{ __('Profile') }}
                 </x-responsive-nav-link>
 
+                <!-- Link ke halaman Welcome -->
+                <x-responsive-nav-link :href="url('/')">
+                    {{ __('Kembali ke Welcome') }}
+                </x-responsive-nav-link>
+
                 <!-- Authentication -->
                 <form method="POST" action="{{ route('logout') }}">
                     @csrf
